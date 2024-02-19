@@ -17,7 +17,7 @@ public class AutomationFilledForm extends TestBase {
         String firstName = RandomUtils.getRandomName();
         String lastName = RandomUtils.getRandomSurname();
         String email = RandomUtils.getRandomEmail();
-        String phoneNumber = "8981666666";
+        String phoneNumber = String.valueOf(faker.number().numberBetween(1000000000L,9999999999L));
         String address = RandomUtils.getRandomAddress();
         String gender = RandomUtils.getRandomItemFromArray(genders);
         String monthOfBirth = RandomUtils.getRandomItemFromArray(monthArray);
